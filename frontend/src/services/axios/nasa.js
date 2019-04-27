@@ -1,9 +1,9 @@
-import url from './apodUrl';
+import NasaApiUrl from './apodUrl';
 import axios from 'axios';
 
 const NasaAxiosService = {};
 
-NasaAxiosService.getSpaceInfo = async (date) => await axios.get(url, {
+NasaAxiosService.getSpaceInfo = async (date) => await axios.get(NasaApiUrl, {
     params: {
         date,
         hd: true
