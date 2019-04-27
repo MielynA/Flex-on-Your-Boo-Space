@@ -1,9 +1,9 @@
 import React from 'react'; 
 import {Route} from 'react-router-dom';
 // Pages 
-import Navbar from './components/Navbar';
+import Navbar from './components/navBar';
 
- import Home from './components/home';
+import Home from './components/home';
 // import SpaceCard here;
 
 function App() {
