@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Navbar = () => {
+const navBar = () => {
     return (
 <nav className="navbar navbar-light bg-light">
   <Link className="navbar-brand" to="/">Flex On Your Boo Space</Link>
@@ -17,4 +17,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar;
+export default navBar;
