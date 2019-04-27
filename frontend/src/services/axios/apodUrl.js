@@ -1,4 +1,5 @@
-import APIKEY from '../../../apiKey_sample';
-const url = `https://api.nasa.gov/planetary/apod?api_key=${APIKEY}`;
+import apiKey from '../../../apiKey';
 
-export default url;
+const NasaApiUrl = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`;
+
+export default NasaApiUrl;
