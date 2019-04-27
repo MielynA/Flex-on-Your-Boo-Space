@@ -4,7 +4,7 @@ import {Route} from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Welcome from './components/Welcome';
 // import Home component here;
-// import SpaceCard here;
+import SpaceCard from './containers/searchCard';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Route to='/' component={Navbar} />
         <div>
           {/* <Route to='/' exact component={Home} /> */}
-          {/* <Route to='/spaceCard/:id' exact component={SpaceCard} /> */}
+          <Route to='/spaceCard/:id' exact component={SpaceCard} />
         </div>
     </div>
   );
