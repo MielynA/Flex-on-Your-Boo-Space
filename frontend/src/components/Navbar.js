@@ -1,16 +1,17 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     return (
 <nav className="navbar navbar-light bg-light">
-  <a className="navbar-brand" href="/">Flex On Your Boo Space</a>
-  <form className="form-inline">
+  <Link className="navbar-brand" href="/">Flex On Your Boo Space</Link>
+  <div className="form-inline">
   <ul className="nav justify-content-end">
   <li className="nav-item">
-    <a className="nav-link active" href="/">Home</a>
+    <Link className="nav-link active" href="/">Home</Link>
   </li>
   </ul>
-  </form>
+  </div>
 </nav>
     
     )
