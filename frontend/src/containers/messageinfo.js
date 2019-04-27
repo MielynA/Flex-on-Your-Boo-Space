@@ -2,6 +2,14 @@ import React from 'react';
 import NasaAxiosService from '../services/nasa';
 
 export default class MessageInfo extends React.Component {
+
+    state = {
+        toInput: '',
+        fromInput: '',
+        date: '',
+        note: ''
+    }
+
     render() {
         return (
             <form>
