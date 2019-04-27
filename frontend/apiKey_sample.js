@@ -1,3 +1,3 @@
-const APIKEY = "YOUR_API_KEY_HERE";
+const apiKey = "YOUR_API_KEY_HERE";
 
-export default APIKEY;
+export default apiKey;
