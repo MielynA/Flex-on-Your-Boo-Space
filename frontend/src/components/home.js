@@ -1,6 +1,6 @@
 import React from 'react';
 import Welcome from './welcome';
-import MessageInfo from '../containers/messageinfo';
+import MessageInfo from '../containers/messageInfo';
 
 export default (props) => {
 	return (<>
