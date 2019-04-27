@@ -1,5 +1,5 @@
 import React from 'react';
-import Welcome from '../components/welcome';
+import Welcome from './welcome';
 import MessageInfo from '../containers/messageInfo';
 
 export default (props) => {
