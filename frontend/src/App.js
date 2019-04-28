@@ -6,11 +6,12 @@ import Navbar from './components/navbar';
 import Home from './components/home';
 import SpaceCard from './containers/spaceCard';
 
+
 function App() {
   return (
-    <div>
+    <div className='app_container'>
       <Route to='/' component={Navbar} />
-        <div>
+        <div className='page-container'>
           <Switch>
             <Route path='/' exact component={Home} />
             <Route path='/spaceCard/:id' exact component={SpaceCard} />
@@ -21,3 +22,4 @@ function App() {
 }
 
 export default App;
+
