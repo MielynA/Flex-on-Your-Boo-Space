@@ -12,8 +12,8 @@ function App() {
       <Route to='/' component={Navbar} />
         <div>
           <Switch>
-            <Route to='/' exact component={Home} />
-            <Route to='/spaceCard/:id' exact component={SpaceCard} />
+            <Route path='/' exact component={Home} />
+            <Route path='/spaceCard/:id' exact component={SpaceCard} />
           </Switch>
         </div>
     </div>
