@@ -5,7 +5,7 @@ import Navbar from './components/navbar';
 
 import Home from './components/home';
 import SpaceCard from './containers/spaceCard';
-import './app.css'
+
 
 function App() {
   return (
