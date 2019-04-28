@@ -28,7 +28,7 @@ class MessageInfo extends React.Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        const { toName, fromName, personalNote, title, img_url, spaceDate, description } = this.state;
+        const { toName, fromName, personalNote, spaceDate } = this.state;
 
         const isRequired = this.checkRequired();
 
@@ -58,7 +58,7 @@ class MessageInfo extends React.Component {
     }
 
     render() {
-        const { toName, fromName, personalNote, title, img_url, date, description, error } = this.state;
+        const { error } = this.state;
 
         return (
             <form className='needs-validation' onSubmit={this.handleSubmit}>
