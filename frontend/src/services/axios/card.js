@@ -11,7 +11,7 @@ CardAxiosService.getAllSpaceCards = async () => (
     await axios.get(`${dbConnectUrl}/booSpace/all`).then(res => res.data)
 );
 
-CardAxiosService.createSpaceCard = async (toName, fromName, personalNote, img_url, horoscopeSign, date, description) => (
+CardAxiosService.createSpaceCard = async (toName, fromName, personalNote, img_url, horoscopeSign, date, spaceDate, description) => (
     await axios.post(`${dbConnectUrl}/booSpace/`, {
         toName,
         fromName,
@@ -19,7 +19,8 @@ CardAxiosService.createSpaceCard = async (toName, fromName, personalNote, img_ur
         img_url,
         horoscopeSign,
         date,
-        description
+        description,
+        spaceDate
     })
     .then(res => res.data)
 );
