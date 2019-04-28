@@ -1,3 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Courgette|Space+Mono);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.app_container {
+    width: 100%;
+    height: 100vh;
+    background-image:url("./assets/junk_one.gif"), url("./assets/space_background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat, repeat;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-auto-rows: repeat(4, 25%);
+    grid-template-areas: 
+    ". . . ."
+    "page-container page-container page-container navbar"
+    "page-container page-container page-container navbar"
+    "page-container page-container page-container navbar";
+}
+
+.page-container {
+    grid-area:page-container;
+    width: 100%;
+    height: 100%;
+    margin: 20px; 
+}
+
+.navbar {
+    grid-area: display;
+    align-self: center;
+    justify-self: end;
+}
+
+.earth_home_button {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-image: url("./assets/earth.png");
+    background-position: center;
+    background-size: contain;
+}
+
+h1 {
+    font-size: 40px;
+    color: #c51313;
+    font-family: 'Courgette', cursive;
+}
+
 .bigSpace {
     background-image: url("./assets/joel-filipe-191372-unsplash.jpg");
     background-size: cover;
@@ -12,8 +65,6 @@
 .navColor {
     background-color:#4F3345;
 }
-
-@import url('https://fonts.googleapis.com/css?family=Space+Mono');
 
 nav {
     font-family: 'Space Mono', monospace;
