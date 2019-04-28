@@ -13,8 +13,8 @@ booSpaceService.get = (id) => {
 }
 
 //--- POST BOOSPACE DATA 
-booSpaceService.post = (toName, fromName, personalNote, img_url, title, horoscropeSign, date, description) => {
-    return db.any('INSERT INTO booSpace (toName, fromName, personalNote, img_url, title, horoscropeSign, date, description) VALUES (${toName}, ${fromName}, ${personalNote}, ${img_url}, ${title}, ${horoscropeSign}, ${date}, ${description}) RETURNING id', {toName, fromName, personalNote, img_url, title, horoscropeSign, date, description})
+booSpaceService.post = (toName, fromName, personalNote, img_url, title, horoscropeSign, date, spaceDate, description) => {
+    return db.any('INSERT INTO booSpace (toName, fromName, personalNote, img_url, title, horoscropeSign, date, spaceDate, description) VALUES (${toName}, ${fromName}, ${personalNote}, ${img_url}, ${title}, ${horoscropeSign}, ${date}, ${spaceDate}, ${description}) RETURNING id', {toName, fromName, personalNote, img_url, title, horoscropeSign, date, spaceDate, description})
 
 }
 
