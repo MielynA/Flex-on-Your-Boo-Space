@@ -5,12 +5,13 @@ import Navbar from './components/navbar';
 
 import Home from './components/home';
 import SpaceCard from './containers/spaceCard';
+import './app.css'
 
 function App() {
   return (
     <div>
       <Route to='/' component={Navbar} />
-        <div>
+        <div className='bigSpace'>
           <Switch>
             <Route path='/' exact component={Home} />
             <Route path='/spaceCard/:id' exact component={SpaceCard} />
@@ -21,3 +22,4 @@ function App() {
 }
 
 export default App;
+
