@@ -28,8 +28,8 @@ app.get('/:id', (req,res)=>{
 
 //----- POST BOOSPACE DATA 
 app.post('/', (req,res)=>{
-    const {toName, fromName, personalNote, img_url, title, horoscropeSign, date, description} = req.body; 
-    booSpaceService.post(toName, fromName, personalNote, img_url, title, horoscropeSign, date, description).then((data)=>{
+    const {toName, fromName, personalNote, img_url, title, horoscropeSign, date, spaceDate, description} = req.body; 
+    booSpaceService.post(toName, fromName, personalNote, img_url, title, horoscropeSign, date, spaceDate, description).then((data)=>{
         res.json({msg: 'New boo space has been created!' ,data})
     })
     .catch(err =>{
