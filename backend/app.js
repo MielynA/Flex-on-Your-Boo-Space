@@ -10,7 +10,7 @@ const {booSpaceRoutes} = require ('./routes/booSpace')
 
 
 //--- MIDDLEWARE 
-app.unsubscribe(cors()); 
+app.use(cors()); 
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json())
 
