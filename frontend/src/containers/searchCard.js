@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class SearchCard extends React.Component { 
+export default class SpaceCard extends React.Component { 
     constructor(props){
         super(props);
         this.state = {
