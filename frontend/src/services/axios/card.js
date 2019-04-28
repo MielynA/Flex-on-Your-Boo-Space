@@ -1,5 +1,5 @@
 import dbConnectUrl from './dbConnect';
-import axios from axios;
+import axios from 'axios';
 
 const CardAxiosService = {};
 
