@@ -1,6 +1,5 @@
 import React from 'react';
 import CardAxiosService from '../services/axios/card';
-import {Link} from 'react-router-dom'
 import moment from 'moment';
 
 export default class SpaceCard extends React.Component { 
@@ -17,7 +16,6 @@ export default class SpaceCard extends React.Component {
             personalnote: "", 
             title: "", 
             toname: "",
-            // booSpace: [],
 
         }
     }
@@ -50,7 +48,6 @@ export default class SpaceCard extends React.Component {
                 personalnote, 
                 title, 
                 toname })
-            console.log(msg, "msg")
         })
     }
 
@@ -67,11 +64,10 @@ export default class SpaceCard extends React.Component {
            personalnote, 
            title, 
            toname,
-           booSpace
+           
         } = this.state;
         console.log('this state', this.state)
        const withoutName = <p>Dear My Boo</p>
-       const fromName = <p></p>
        return(
 
            <React.Fragment>
@@ -84,8 +80,6 @@ export default class SpaceCard extends React.Component {
                <div>Facts: {description}</div>
                <p className="card-text">Personal Note:{personalnote}</p>
                {fromname ? <p>From: {fromname}</p> : null}
-               {/* we could do a moment here */}
-               <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                <button className="ml-2 btn btn-primary">Share</button>
              </div>
              </div>
