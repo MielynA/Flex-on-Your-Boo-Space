@@ -4,7 +4,7 @@ import {Route, Switch} from 'react-router-dom';
 import Navbar from './components/navbar';
 
 import Home from './components/home';
-import SpaceCard from './containers/searchCard';
+import SpaceCard from './containers/spaceCard';
 
 function App() {
   return (
