@@ -1,0 +1,25 @@
+.bigSpace {
+    background-image: url("./assets/joel-filipe-191372-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    border-radius: 5px;
+    opacity: 0.8;
+}
+
+.navColor {
+    background-color:#4F3345;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
+nav {
+    font-family: 'Space Mono', monospace;
+}
+
+.welcomeFont {
+    font-family: 'Space Mono', monospace;
+}
+
