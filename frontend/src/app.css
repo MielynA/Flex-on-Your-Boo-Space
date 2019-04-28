@@ -6,6 +6,14 @@
     padding: 0;
 }
 
+.space-red {
+    color: #c51313;
+}
+
+.space-grey {
+    color: #cfcfd1;
+}
+
 .app_container {
     width: 100%;
     height: 100vh;
@@ -47,7 +55,6 @@
 
 h1 {
     font-size: 40px;
-    color: #c51313;
     font-family: 'Courgette', cursive;
 }
 
